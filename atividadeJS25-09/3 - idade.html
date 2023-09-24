@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+
+<body>
+
+    Nome da primeira pessoa: <span id="nome1"></span><br>
+    Idade da primeira pessoa: <span id="dt1"></span><br>
+    Nome da segunda pessoa: <span id="nome2"></span><br>
+    Idade da segunda pessoa: <span id="dt2"></span><br>
+    Quem é mais novo: <span id="novo"></span>
+
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pesssoa: ")
+        let dt1 = Number(prompt("Digite o ano de nascimento da primeira pesssoa: "))
+        let nome2 = prompt("Digite o nome da segunda pesssoa: ")
+        let dt2 = Number(prompt("Digite o ano de nascimento da segunda pesssoa: "))
+        let novo = ""
+        let idade1 = 0
+        let idade2 = 0
+        idade1 = 2023 - dt1
+        idade2 = 2023 - dt2
+        if (idade1 > idade2) {
+            document.getElementById("nome1").innerHTML = nome1
+            document.getElementById("dt1").innerHTML = idade1 + " anos"
+            document.getElementById("nome2").innerHTML = nome2
+            document.getElementById("dt2").innerHTML = idade2 + " anos"
+            document.getElementById("novo").innerHTML = nome2 + " é o mais novo"
+
+        }
+        else if (idade1 < idade2) {
+            document.getElementById("nome1").innerHTML = nome1
+            document.getElementById("dt1").innerHTML = idade1 + " anos"
+            document.getElementById("nome2").innerHTML = nome2
+            document.getElementById("dt2").innerHTML = idade2 + " anos"
+            document.getElementById("novo").innerHTML = nome1 + " é o mais novo"
+
+        } else {
+            document.getElementById("nome1").innerHTML = nome1
+            document.getElementById("dt1").innerHTML = idade1 + " anos"
+            document.getElementById("nome2").innerHTML = nome2
+            document.getElementById("dt2").innerHTML = idade2 + " anos"
+            document.getElementById("novo").innerHTML = nome2 + " e " + nome1 + " tem a mesma idade"
+
+        }
+
+    </script>
+</body>
+
+</html>

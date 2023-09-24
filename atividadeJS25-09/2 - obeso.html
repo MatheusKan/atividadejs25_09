@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obeso</title>
+</head>
+
+<body>
+    Nome: <span id="nome"></span><br>
+    Peso: <span id="peso"></span>
+
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa: ");
+        let peso1 = prompt("Digite o peso da primeira pessoa: ");
+        let nome2 = prompt("Digite o nome da segunda pessoa: ");
+        let peso2 = prompt("Digite o peso da segunda pessoa");
+
+        if (peso1 > peso2) {
+            document.getElementById("nome").innerHTML = nome1;
+            document.getElementById("peso").innerHTML = peso1+ " kgs";
+        } else {
+            document.getElementById("nome").innerHTML = nome2;
+            document.getElementById("peso").innerHTML = peso2+ " kgs";
+        }
+    </script>
+</body>
+
+</html>
